@@ -1,0 +1,351 @@
+{
+  "provider": "bedrock",
+  "stats": {
+    "calls": 40,
+    "fallbacks": 126
+  },
+  "coverage": 89,
+  "sources": [
+    "apac.amazon.nova-lite-v1:0",
+    "rules/result-line@1.0",
+    "rules/keyword@1.0"
+  ],
+  "sample": [
+    {
+      "id": "f01~4.1.1",
+      "fileId": "f01",
+      "clauseId": "4.1.1",
+      "confidence": 0.95,
+      "source": {
+        "kind": "bedrock",
+        "name": "apac.amazon.nova-lite-v1:0"
+      },
+      "rationale": "The passage provides objective evidence that the defined quality policy criteria are met, as indicated by the test report TR-100.",
+      "original": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 12,
+          "quote": "Test report TR-100: quality policy within stated limits in all units. Result: PASS."
+        }
+      },
+      "current": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 12,
+          "quote": "Test report TR-100: quality policy within stated limits in all units. Result: PASS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~4.3.2",
+      "fileId": "f01",
+      "clauseId": "4.3.2",
+      "confidence": 0.9,
+      "source": {
+        "kind": "bedrock",
+        "name": "apac.amazon.nova-lite-v1:0"
+      },
+      "rationale": "The passage mentions a test report (TR-107) which is evidence for applicable rules, but it only met the rules in 2 of 3 configurations, indicating partial conformity.",
+      "original": {
+        "verdict": "partial",
+        "evidence": {
+          "page": 34,
+          "quote": "Test report TR-107: applicable rules met in 2 of 3 configurations. Result: PASS WITH OBSERVATIONS."
+        }
+      },
+      "current": {
+        "verdict": "partial",
+        "evidence": {
+          "page": 34,
+          "quote": "Test report TR-107: applicable rules met in 2 of 3 configurations. Result: PASS WITH OBSERVATIONS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~4.5.3",
+      "fileId": "f01",
+      "clauseId": "4.5.3",
+      "confidence": 0.95,
+      "source": {
+        "kind": "bedrock",
+        "name": "apac.amazon.nova-lite-v1:0"
+      },
+      "rationale": "The passage provides a test report that confirms component genealogy was verified under normal conditions and the results were within the stated limits.",
+      "original": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 56,
+          "quote": "Test report TR-114: component genealogy within stated limits in all units. Result: PASS."
+        }
+      },
+      "current": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 56,
+          "quote": "Test report TR-114: component genealogy within stated limits in all units. Result: PASS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~5.2.3",
+      "fileId": "f01",
+      "clauseId": "5.2.3",
+      "confidence": 0.95,
+      "source": {
+        "kind": "bedrock",
+        "name": "apac.amazon.nova-lite-v1:0"
+      },
+      "rationale": "The passage explicitly states that foreseeable misuse was verified under normal and single-fault conditions, and the test report confirms that all units passed within the stated limits.",
+      "original": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 75,
+          "quote": "Test report TR-120: foreseeable misuse within stated limits in all units. Result: PASS."
+        }
+      },
+      "current": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 75,
+          "quote": "Test report TR-120: foreseeable misuse within stated limits in all units. Result: PASS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~5.5.1",
+      "fileId": "f01",
+      "clauseId": "5.5.1",
+      "confidence": 0.8,
+      "source": {
+        "kind": "bedrock",
+        "name": "apac.amazon.nova-lite-v1:0"
+      },
+      "rationale": "The passage indicates that the risk management report was met in 2 out of 3 configurations, which suggests partial conformity with the clause. However, the report does not provide full evidence of conformity across all configurations.",
+      "original": {
+        "verdict": "partial",
+        "evidence": {
+          "page": 97,
+          "quote": "Test report TR-127: risk management report met in 2 of 3 configurations. Result: PASS WITH OBSERVATIONS."
+        }
+      },
+      "current": {
+        "verdict": "partial",
+        "evidence": {
+          "page": 97,
+          "quote": "Test report TR-127: risk management report met in 2 of 3 configurations. Result: PASS WITH OBSERVATIONS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~6.2.2",
+      "fileId": "f01",
+      "clauseId": "6.2.2",
+      "confidence": 0.95,
+      "source": {
+        "kind": "bedrock",
+        "name": "apac.amazon.nova-lite-v1:0"
+      },
+      "rationale": "The passage provides a test report (TR-134) that confirms the maximum flow rate within stated limits, which is traceable to a controlled test report or record as required by Clause 6.2.2.",
+      "original": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 119,
+          "quote": "Test report TR-134: maximum flow rate within stated limits in all units. Result: PASS."
+        }
+      },
+      "current": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 119,
+          "quote": "Test report TR-134: maximum flow rate within stated limits in all units. Result: PASS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~6.4.3",
+      "fileId": "f01",
+      "clauseId": "6.4.3",
+      "confidence": 0.95,
+      "source": {
+        "kind": "bedrock",
+        "name": "apac.amazon.nova-lite-v1:0"
+      },
+      "rationale": "The passage explicitly states that the air alarm response was verified under normal and single-fault conditions, and the results were recorded against the stated limits, as required by Clause 6.4.3.",
+      "original": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 141,
+          "quote": "Test report TR-141: air alarm response within stated limits in all units. Result: PASS."
+        }
+      },
+      "current": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 141,
+          "quote": "Test report TR-141: air alarm response within stated limits in all units. Result: PASS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~7.1.3",
+      "fileId": "f01",
+      "clauseId": "7.1.3",
+      "confidence": 0.66,
+      "source": {
+        "kind": "rules",
+        "name": "rules/result-line@1.0"
+      },
+      "rationale": "Result line reports observations on page 160.",
+      "original": {
+        "verdict": "partial",
+        "evidence": {
+          "page": 160,
+          "quote": "Test report TR-147: drop resistance met in 2 of 3 configurations. Result: PASS WITH OBSERVATIONS."
+        }
+      },
+      "current": {
+        "verdict": "partial",
+        "evidence": {
+          "page": 160,
+          "quote": "Test report TR-147: drop resistance met in 2 of 3 configurations. Result: PASS WITH OBSERVATIONS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~7.4.1",
+      "fileId": "f01",
+      "clauseId": "7.4.1",
+      "confidence": 0.86,
+      "source": {
+        "kind": "rules",
+        "name": "rules/result-line@1.0"
+      },
+      "rationale": "Result line reports PASS on page 182.",
+      "original": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 182,
+          "quote": "Test report TR-154: liquid ingress rating within stated limits in all units. Result: PASS."
+        }
+      },
+      "current": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 182,
+          "quote": "Test report TR-154: liquid ingress rating within stated limits in all units. Result: PASS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~8.1.2",
+      "fileId": "f01",
+      "clauseId": "8.1.2",
+      "confidence": 0.93,
+      "source": {
+        "kind": "rules",
+        "name": "rules/result-line@1.0"
+      },
+      "rationale": "Result line reports PASS on page 205.",
+      "original": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 205,
+          "quote": "Test report TR-161: earth terminal marking within stated limits in all units. Result: PASS."
+        }
+      },
+      "current": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 205,
+          "quote": "Test report TR-161: earth terminal marking within stated limits in all units. Result: PASS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~8.3.3",
+      "fileId": "f01",
+      "clauseId": "8.3.3",
+      "confidence": 0.63,
+      "source": {
+        "kind": "rules",
+        "name": "rules/result-line@1.0"
+      },
+      "rationale": "Result line reports FAIL on page 227.",
+      "original": {
+        "verdict": "not_demonstrated",
+        "evidence": {
+          "page": 227,
+          "quote": "Test report TR-168: inlet fusing exceeded the limit in worst case. Result: FAIL."
+        }
+      },
+      "current": {
+        "verdict": "not_demonstrated",
+        "evidence": {
+          "page": 227,
+          "quote": "Test report TR-168: inlet fusing exceeded the limit in worst case. Result: FAIL."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    },
+    {
+      "id": "f01~8.5.3",
+      "fileId": "f01",
+      "clauseId": "8.5.3",
+      "confidence": 0.83,
+      "source": {
+        "kind": "rules",
+        "name": "rules/result-line@1.0"
+      },
+      "rationale": "Result line reports PASS on page 239.",
+      "original": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 239,
+          "quote": "Test report TR-174: low battery warning within stated limits in all units. Result: PASS."
+        }
+      },
+      "current": {
+        "verdict": "satisfied",
+        "evidence": {
+          "page": 239,
+          "quote": "Test report TR-174: low battery warning within stated limits in all units. Result: PASS."
+        },
+        "reason": ""
+      },
+      "state": "pending",
+      "updatedAt": "2026-11-27T21:20:38.609Z"
+    }
+  ]
+}

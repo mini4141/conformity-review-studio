@@ -12,7 +12,7 @@ Each decision is defended in a sentence or two. Principles are in [principles.md
 
 **Row height as a token (`--row-h`).** The virtualized table needs to know row height numerically, so density is a token pair: CSS uses `--row-h`, and the table receives the matching pixel value from `ROW_HEIGHT`.
 
-**Virtualization for every long list.** The matrix, queue and PDF pages are virtualized (TanStack Virtual) so 180 rows or 412 pages cost the same as ten; the matrix is measured at about 59 fps while scrolling.
+**Virtualization for every long list.** The matrix, queue and PDF pages are virtualized (TanStack Virtual) so 180 rows or 412 pages cost the same as ten; the matrix is measured at 55 to 59 fps average while scrolling in headless Chromium with software rasterisation.
 
 **Sticky header and pinned first column.** In a 13-column grid the clause id is the row identity; pinning it keeps context when scrolling horizontally.
 

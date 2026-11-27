@@ -1,0 +1,43 @@
+# Deployed AWS resources (account id redacted)
+# stack outputs
+TableName = ConformityReviewStudio-TableCD117FA1-1K4PYO3LTWRJ1
+FunctionName = ConformityReviewStudio-ApiF70053CD-r79AvRCZ7Vop
+CloudFrontUrl = https://d1yaik0npka2rt.cloudfront.net
+ApiUrl = https://poi2i5ssp4.execute-api.ap-southeast-2.amazonaws.com
+WebBucketName = conformityreviewstudio-webbucket12880f5b-dylkkjtp6rhj
+DistributionId = E3RZOTW8KFLFNL
+DocsBucketName = conformityreviewstudio-docsbucketecea003f-t4odvo5bqomo
+
+# CloudFormation resources
+AWS::Lambda::Function	ApiF70053CD	ConformityReviewStudio-ApiF70053CD-r79AvRCZ7Vop	CREATE_COMPLETE
+AWS::Logs::LogGroup	ApiLogs3D05D88B	ConformityReviewStudio-ApiLogs3D05D88B-l1w790GR2eqm	CREATE_COMPLETE
+AWS::IAM::Role	ApiServiceRole1BD550DA	ConformityReviewStudio-ApiServiceRole1BD550DA-lAzLwvMNfi3C	CREATE_COMPLETE
+AWS::IAM::Policy	ApiServiceRoleDefaultPolicyB24862FE	Confo-ApiSe-82CPls5hbs2H	CREATE_COMPLETE
+AWS::CDK::Metadata	CDKMetadata	2d8b7bf0-eaa7-11f1-8e48-0afffe6bad43	CREATE_COMPLETE
+AWS::CloudFront::Distribution	Cdn9963B1AD	E3RZOTW8KFLFNL	CREATE_COMPLETE
+AWS::CloudFront::OriginAccessControl	CdnOrigin1S3OriginAccessControl6AC0AEFC	E1E2V6IXOMKHX4	CREATE_COMPLETE
+AWS::CloudFront::Function	DirIndex1A3B8A93	arn:aws:cloudfront::<ACCOUNT_ID>:function/ap-southeast-2ConformityReviewStudioDirIndex6309120B	CREATE_COMPLETE
+AWS::S3::Bucket	DocsBucketECEA003F	conformityreviewstudio-docsbucketecea003f-t4odvo5bqomo	CREATE_COMPLETE
+AWS::S3::BucketPolicy	DocsBucketPolicy7BCF1FB7	conformityreviewstudio-docsbucketecea003f-t4odvo5bqomo	CREATE_COMPLETE
+AWS::ApiGatewayV2::Route	HttpApiANYproxy435A1FB9	9odi4et	CREATE_COMPLETE
+AWS::ApiGatewayV2::Integration	HttpApiANYproxyApiIntegration8E99356C	8x1ixzg	CREATE_COMPLETE
+AWS::Lambda::Permission	HttpApiANYproxyApiIntegrationPermissionCB2DDF98	ConformityReviewStudio-HttpApiANYproxyApiIntegrationPermissionCB2DDF98-u6rNOfi3g8UU	CREATE_COMPLETE
+AWS::ApiGatewayV2::Stage	HttpApiDefaultStage3EEB07D6	$default	CREATE_COMPLETE
+AWS::ApiGatewayV2::Api	HttpApiF5A9A8A7	poi2i5ssp4	CREATE_COMPLETE
+AWS::DynamoDB::Table	TableCD117FA1	ConformityReviewStudio-TableCD117FA1-1K4PYO3LTWRJ1	CREATE_COMPLETE
+AWS::S3::Bucket	WebBucket12880F5B	conformityreviewstudio-webbucket12880f5b-dylkkjtp6rhj	CREATE_COMPLETE
+AWS::S3::BucketPolicy	WebBucketPolicy95D08FAA	conformityreviewstudio-webbucket12880f5b-dylkkjtp6rhj	CREATE_COMPLETE
+
+# tagged resources (Project=conformity-review-studio)
+arn:aws:apigateway:ap-southeast-2::/apis/poi2i5ssp4
+arn:aws:cloudformation:ap-southeast-2:<ACCOUNT_ID>:stack/CDKToolkit-conformity-review-studio/860ee5b0-eaa6-11f1-b0b8-0affdca7899d
+arn:aws:logs:ap-southeast-2:<ACCOUNT_ID>:log-group:ConformityReviewStudio-ApiLogs3D05D88B-l1w790GR2eqm
+arn:aws:apigateway:ap-southeast-2::/apis/poi2i5ssp4/stages/$default
+arn:aws:ecr:ap-southeast-2:<ACCOUNT_ID>:repository/cdk-crstudio-container-assets-<ACCOUNT_ID>-ap-southeast-2
+arn:aws:cloudformation:ap-southeast-2:<ACCOUNT_ID>:stack/ConformityReviewStudio/2d8b7bf0-eaa7-11f1-8e48-0afffe6bad43
+arn:aws:s3:::conformityreviewstudio-webbucket12880f5b-dylkkjtp6rhj
+arn:aws:lambda:ap-southeast-2:<ACCOUNT_ID>:function:ConformityReviewStudio-ApiF70053CD-r79AvRCZ7Vop
+arn:aws:ssm:ap-southeast-2:<ACCOUNT_ID>:parameter/cdk-bootstrap/crstudio/version
+arn:aws:s3:::cdk-crstudio-assets-<ACCOUNT_ID>-ap-southeast-2
+arn:aws:dynamodb:ap-southeast-2:<ACCOUNT_ID>:table/ConformityReviewStudio-TableCD117FA1-1K4PYO3LTWRJ1
+arn:aws:s3:::conformityreviewstudio-docsbucketecea003f-t4odvo5bqomo

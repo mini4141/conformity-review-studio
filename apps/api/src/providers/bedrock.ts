@@ -68,7 +68,7 @@ export function bedrockProvider(): FindingProvider & { stats: { calls: number; f
           source: { kind: 'bedrock', name: MODEL_ID },
         };
       } catch (e) {
-        log('warn', 'bedrock call failed, using rules', { clause: clause.id, error: (e as Error).name });
+        log('warn', 'bedrock call failed, using rules', { clause: clause.id, error: (e as Error).name, detail: (e as Error).message.slice(0, 200) });
         return fallback();
       }
     },

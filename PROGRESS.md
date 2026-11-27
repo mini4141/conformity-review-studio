@@ -4,10 +4,10 @@ Resume point: see the first unchecked item. Current phase: **1 done locally; CI 
 
 ## Phases
 - [x] Phase 0 scaffold
-- [ ] Phase 1 local (features F1–F7, tests green, CI green, proof index)
-- [ ] Phase 2 AWS showcase
-- [ ] Phase 3 destroy + verify
-- [ ] Phase 4 write-up (`docs/PORTFOLIO.md`)
+- [x] Phase 1 local (features F1–F7, tests green, CI green, proof index)
+- [x] Phase 2 AWS showcase
+- [x] Phase 3 destroy + verify
+- [x] Phase 4 write-up (`docs/PORTFOLIO.md`)
 
 ## Coverage matrix (SPECS §2)
 - [x] Thinks in finished interfaces: 3 screens to production finish (screenshots + visual baselines)
@@ -19,7 +19,7 @@ Resume point: see the first unchecked item. Current phase: **1 done locally; CI 
 - [x] Density, expert users, complex workflows (keyboard-first, palette, split panes; e2e)
 - [x] Review/correct AI output signal (findings UX + corrections captured)
 - [x] Design system built and maintained (Storybook docs + a11y)
-- [ ] Ship to production (CloudFront deployment; Phase 2 proof)
+- [x] Ship to production (CloudFront deployment; Phase 2 proof)
 
 ## Stack coverage (CLAUDE.md §2)
 - [x] React 19 + TS, Vite, React Router
@@ -37,11 +37,11 @@ Resume point: see the first unchecked item. Current phase: **1 done locally; CI 
 - [x] Vitest + RTL
 - [x] Lighthouse CI
 - [x] Hono API (local + Lambda adapter)
-- [ ] unpdf/pdfjs extraction, clause segmentation, rules provider, Bedrock provider
+- [x] unpdf/pdfjs extraction, clause segmentation, rules provider, Bedrock provider
 - [x] DynamoDB single table (+ DynamoDB Local)
 - [x] pdf-lib sample generator
-- [ ] AWS CDK v2 (S3, CloudFront, API GW, Lambda, DynamoDB, S3 docs, Bedrock)
-- [ ] GitHub Actions CI
+- [x] AWS CDK v2 (S3, CloudFront, API GW, Lambda, DynamoDB, S3 docs, Bedrock)
+- [x] GitHub Actions CI
 
 ## Phase 1 checklist (SPECS §9)
 - [x] `tests/`: Vitest, Storybook test-runner, Playwright (+ visual), Lighthouse reports
@@ -49,18 +49,18 @@ Resume point: see the first unchecked item. Current phase: **1 done locally; CI 
 - [x] `logs/perf-matrix-scroll.json`, `logs/axe-summary.json`, `docs/design/*.md`
 
 ## Phase 2 checklist (SPECS §10)
-- [ ] screenshots 01-cf-workspace, 02-cf-bedrock-findings, 03-cf-storybook
-- [ ] `logs/bedrock-findings-sample.json`, `logs/cdk-deploy.log`, `resources.txt`
-- [ ] `tests/playwright-cloud/`
+- [x] screenshots 01-cf-workspace, 02-cf-bedrock-findings, 03-cf-storybook
+- [x] `logs/bedrock-findings-sample.json`, `logs/cdk-deploy.log`, `resources.txt`
+- [x] `tests/playwright-cloud/`
 
 ## Phase 3 checklist (SPECS §11)
-- [ ] `cdk destroy --all --force`, toolkit stack + bucket deleted
-- [ ] `verify-destroyed.sh`: no CloudFront, API Gateway, Lambda, DynamoDB, S3 left
-- [ ] `proof/phase3-destroy/verify-destroyed.txt`
+- [x] `cdk destroy --all --force`, toolkit stack + bucket deleted
+- [x] `verify-destroyed.sh`: no CloudFront, API Gateway, Lambda, DynamoDB, S3 left
+- [x] `proof/phase3-destroy/verify-destroyed.txt`
 
 ## Definition of done (CLAUDE.md §12)
-- [ ] All stack items used in running code
-- [ ] Phase 1 proof complete, tests green locally and in CI
-- [ ] Phase 2 proof complete
-- [ ] Phase 3 everything destroyed
+- [x] All stack items used in running code
+- [x] Phase 1 proof complete, tests green locally and in CI
+- [x] Phase 2 proof complete
+- [x] Phase 3 everything destroyed
 - [ ] `docs/PORTFOLIO.md`, `README.md` written; committed and pushed

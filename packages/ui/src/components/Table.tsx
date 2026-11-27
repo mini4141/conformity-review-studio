@@ -73,7 +73,7 @@ export function Table<T>({ data, columns, getRowId, rowHeight, ariaLabel, pinFir
     meta: meta as never,
   });
   const rows = table.getRowModel().rows;
-  const virt = useVirtualizer({ count: rows.length, getScrollElement: () => el.current, estimateSize: () => rowHeight, overscan: 4, initialRect: { width: 1200, height: 800 }, useFlushSync: false });
+  const virt = useVirtualizer({ count: rows.length, getScrollElement: () => el.current, estimateSize: () => rowHeight, overscan: 2, initialRect: { width: 1200, height: 800 }, useFlushSync: false });
   useEffect(() => {
     virt.measure();
   }, [rowHeight]); // eslint-disable-line react-hooks/exhaustive-deps

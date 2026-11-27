@@ -1,0 +1,50 @@
+<testsuites id="" name="" tests="4" failures="1" skipped="0" errors="0" time="56.815841999999996">
+<testsuite name="00-smoke.spec.ts" timestamp="2026-11-27T21:17:44.296Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.216" errors="0">
+<testcase name="api smoke: health, queue, clauses, findings coverage and the PDF" classname="00-smoke.spec.ts" time="6.216">
+</testcase>
+</testsuite>
+<testsuite name="02-flow.spec.ts" timestamp="2026-11-27T21:17:44.296Z" hostname="chromium" tests="2" failures="0" skipped="0" time="30.587" errors="0">
+<testcase name="review journey: queue, evidence jump, correction that persists, matrix edit, decision and export" classname="02-flow.spec.ts" time="27.651">
+</testcase>
+<testcase name="keyboard affordances: command palette and shortcut sheet" classname="02-flow.spec.ts" time="2.936">
+</testcase>
+</testsuite>
+<testsuite name="03-perf.spec.ts" timestamp="2026-11-27T21:17:44.296Z" hostname="chromium" tests="1" failures="1" skipped="0" time="16.511" errors="0">
+<testcase name="matrix scroll stays at &gt;= 55 fps on average" classname="03-perf.spec.ts" time="16.511">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\..\..\e2e\test-results\03-perf-matrix-scroll-stays-at-55-fps-on-average-chromium\error-context.md]]
+
+[[ATTACHMENT|..\..\..\..\e2e\test-results\03-perf-matrix-scroll-stays-at-55-fps-on-average-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(received).toBeGreaterThanOrEqual(expected)" type="expect.toBeGreaterThanOrEqual">
+<![CDATA[  [chromium] › 03-perf.spec.ts:7:1 › matrix scroll stays at >= 55 fps on average ───────────────────
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 55
+    Received:    49.3
+
+      42 |   mkdirSync(OUT, { recursive: true });
+      43 |   writeFileSync(`${OUT}/perf-matrix-scroll.json`, JSON.stringify({ test: 'matrix-scroll', viewport: '1440x900', build: 'production (vite preview)', ...result }, null, 2));
+    > 44 |   expect(result.medianAvgFps).toBeGreaterThanOrEqual(55);
+         |                               ^
+      45 | });
+      46 |
+        at C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\15-conformity-review-studio\e2e\03-perf.spec.ts:44:31
+
+    Error Context: test-results\03-perf-matrix-scroll-stays-at-55-fps-on-average-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\03-perf-matrix-scroll-stays-at-55-fps-on-average-chromium\trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results\03-perf-matrix-scroll-stays-at-55-fps-on-average-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

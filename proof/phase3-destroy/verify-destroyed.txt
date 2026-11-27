@@ -1,0 +1,16 @@
+verify-destroyed: 2026-11-27T21:32:21Z
+OK    CloudFormation stack ConformityReviewStudio: none
+OK    CloudFormation stack CDKToolkit-conformity-review-studio: none
+OK    CloudFront distributions: none
+OK    API Gateway HTTP APIs: none
+OK    Lambda functions: none
+OK    DynamoDB tables: none
+OK    S3 buckets: none
+OK    CloudWatch log groups: none
+OK    ECR repositories: none
+OK    IAM roles: none
+OK    SSM bootstrap parameter: none
+--- tagging API (informational; may lag after deletion) ---
+region ap-southeast-2: 
+region us-east-1: 
+RESULT: nothing billable remains

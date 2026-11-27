@@ -1,105 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="36" failures="0" errors="0" time="43.307">
-  <testsuite name="Components/EmptyState" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:00" time="15.006" tests="2">
-    <testcase classname="Components/EmptyState Default smoke-test" name="Components/EmptyState Default smoke-test" time="3.558">
+<testsuites name="jest tests" tests="36" failures="0" errors="0" time="41.522">
+  <testsuite name="Components/Tooltip and Popover" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:21" time="14.601" tests="2">
+    <testcase classname="Components/Tooltip and Popover Tooltip On Hover play-test" name="Components/Tooltip and Popover Tooltip On Hover play-test" time="3.227">
     </testcase>
-    <testcase classname="Components/EmptyState With Action smoke-test" name="Components/EmptyState With Action smoke-test" time="2.072">
-    </testcase>
-  </testsuite>
-  <testsuite name="Components/Tooltip and Popover" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:00" time="16.932" tests="2">
-    <testcase classname="Components/Tooltip and Popover Tooltip On Hover play-test" name="Components/Tooltip and Popover Tooltip On Hover play-test" time="4.701">
-    </testcase>
-    <testcase classname="Components/Tooltip and Popover Popover On Click play-test" name="Components/Tooltip and Popover Popover On Click play-test" time="2.849">
+    <testcase classname="Components/Tooltip and Popover Popover On Click play-test" name="Components/Tooltip and Popover Popover On Click play-test" time="2.613">
     </testcase>
   </testsuite>
-  <testsuite name="Components/ConfidenceMeter" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:00" time="18.868" tests="3">
-    <testcase classname="Components/ConfidenceMeter High smoke-test" name="Components/ConfidenceMeter High smoke-test" time="3.884">
+  <testsuite name="Components/ConfidenceMeter" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:21" time="16.982" tests="3">
+    <testcase classname="Components/ConfidenceMeter High smoke-test" name="Components/ConfidenceMeter High smoke-test" time="3.383">
     </testcase>
-    <testcase classname="Components/ConfidenceMeter Medium smoke-test" name="Components/ConfidenceMeter Medium smoke-test" time="2.471">
+    <testcase classname="Components/ConfidenceMeter Medium smoke-test" name="Components/ConfidenceMeter Medium smoke-test" time="2.674">
     </testcase>
-    <testcase classname="Components/ConfidenceMeter Low smoke-test" name="Components/ConfidenceMeter Low smoke-test" time="2">
-    </testcase>
-  </testsuite>
-  <testsuite name="Review/RequirementsGrid" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:00" time="22.006" tests="3">
-    <testcase classname="Review/RequirementsGrid Comfortable smoke-test" name="Review/RequirementsGrid Comfortable smoke-test" time="4.922">
-    </testcase>
-    <testcase classname="Review/RequirementsGrid Compact smoke-test" name="Review/RequirementsGrid Compact smoke-test" time="3.796">
-    </testcase>
-    <testcase classname="Review/RequirementsGrid Cell Editor play-test" name="Review/RequirementsGrid Cell Editor play-test" time="3.928">
+    <testcase classname="Components/ConfidenceMeter Low smoke-test" name="Components/ConfidenceMeter Low smoke-test" time="2.073">
     </testcase>
   </testsuite>
-  <testsuite name="Components/Badge" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:00" time="22.784" tests="5">
-    <testcase classname="Components/Badge Ok smoke-test" name="Components/Badge Ok smoke-test" time="3.731">
+  <testsuite name="Components/EmptyState" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:21" time="17.244" tests="2">
+    <testcase classname="Components/EmptyState Default smoke-test" name="Components/EmptyState Default smoke-test" time="3.47">
     </testcase>
-    <testcase classname="Components/Badge Warn smoke-test" name="Components/Badge Warn smoke-test" time="2.447">
-    </testcase>
-    <testcase classname="Components/Badge Bad smoke-test" name="Components/Badge Bad smoke-test" time="2.428">
-    </testcase>
-    <testcase classname="Components/Badge Info smoke-test" name="Components/Badge Info smoke-test" time="1.84">
-    </testcase>
-    <testcase classname="Components/Badge All Tones smoke-test" name="Components/Badge All Tones smoke-test" time="2.693">
+    <testcase classname="Components/EmptyState With Action smoke-test" name="Components/EmptyState With Action smoke-test" time="2.258">
     </testcase>
   </testsuite>
-  <testsuite name="Review/FindingCard" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:00" time="22.727" tests="4">
-    <testcase classname="Review/FindingCard Pending play-test" name="Review/FindingCard Pending play-test" time="4.209">
+  <testsuite name="Components/Badge" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:21" time="20.184" tests="5">
+    <testcase classname="Components/Badge Ok smoke-test" name="Components/Badge Ok smoke-test" time="2.665">
     </testcase>
-    <testcase classname="Review/FindingCard Correction Editor play-test" name="Review/FindingCard Correction Editor play-test" time="3.171">
+    <testcase classname="Components/Badge Warn smoke-test" name="Components/Badge Warn smoke-test" time="2.611">
     </testcase>
-    <testcase classname="Review/FindingCard Corrected With Diff And History smoke-test" name="Review/FindingCard Corrected With Diff And History smoke-test" time="2.368">
+    <testcase classname="Components/Badge Bad smoke-test" name="Components/Badge Bad smoke-test" time="1.87">
     </testcase>
-    <testcase classname="Review/FindingCard Accepted smoke-test" name="Review/FindingCard Accepted smoke-test" time="2.816">
+    <testcase classname="Components/Badge Info smoke-test" name="Components/Badge Info smoke-test" time="2.178">
     </testcase>
-  </testsuite>
-  <testsuite name="Components/Button" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:00" time="23.473" tests="6">
-    <testcase classname="Components/Button Primary play-test" name="Components/Button Primary play-test" time="3.683">
-    </testcase>
-    <testcase classname="Components/Button Secondary smoke-test" name="Components/Button Secondary smoke-test" time="2.592">
-    </testcase>
-    <testcase classname="Components/Button Ghost smoke-test" name="Components/Button Ghost smoke-test" time="2.28">
-    </testcase>
-    <testcase classname="Components/Button Danger smoke-test" name="Components/Button Danger smoke-test" time="1.784">
-    </testcase>
-    <testcase classname="Components/Button Disabled smoke-test" name="Components/Button Disabled smoke-test" time="1.886">
-    </testcase>
-    <testcase classname="Components/Button Icon smoke-test" name="Components/Button Icon smoke-test" time="1.539">
+    <testcase classname="Components/Badge All Tones smoke-test" name="Components/Badge All Tones smoke-test" time="1.904">
     </testcase>
   </testsuite>
-  <testsuite name="Components/DiffText" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:17" time="11.739" tests="2">
-    <testcase classname="Components/DiffText Verdict smoke-test" name="Components/DiffText Verdict smoke-test" time="2.692">
+  <testsuite name="Review/FindingCard" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:21" time="20.806" tests="4">
+    <testcase classname="Review/FindingCard Pending play-test" name="Review/FindingCard Pending play-test" time="4.035">
     </testcase>
-    <testcase classname="Components/DiffText Sentence smoke-test" name="Components/DiffText Sentence smoke-test" time="1.763">
+    <testcase classname="Review/FindingCard Correction Editor play-test" name="Review/FindingCard Correction Editor play-test" time="2.632">
     </testcase>
-  </testsuite>
-  <testsuite name="Components/Tag" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:19" time="12.404" tests="2">
-    <testcase classname="Components/Tag Default smoke-test" name="Components/Tag Default smoke-test" time="2.612">
+    <testcase classname="Review/FindingCard Corrected With Diff And History smoke-test" name="Review/FindingCard Corrected With Diff And History smoke-test" time="2.46">
     </testcase>
-    <testcase classname="Components/Tag Removable smoke-test" name="Components/Tag Removable smoke-test" time="2.418">
+    <testcase classname="Review/FindingCard Accepted smoke-test" name="Review/FindingCard Accepted smoke-test" time="1.922">
     </testcase>
   </testsuite>
-  <testsuite name="Components/SplitPane" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:22" time="9.244" tests="1">
-    <testcase classname="Components/SplitPane Three Panes smoke-test" name="Components/SplitPane Three Panes smoke-test" time="3.246">
+  <testsuite name="Components/Button" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:21" time="22.836" tests="6">
+    <testcase classname="Components/Button Primary play-test" name="Components/Button Primary play-test" time="3.406">
+    </testcase>
+    <testcase classname="Components/Button Secondary smoke-test" name="Components/Button Secondary smoke-test" time="2.496">
+    </testcase>
+    <testcase classname="Components/Button Ghost smoke-test" name="Components/Button Ghost smoke-test" time="2.015">
+    </testcase>
+    <testcase classname="Components/Button Danger smoke-test" name="Components/Button Danger smoke-test" time="2.211">
+    </testcase>
+    <testcase classname="Components/Button Disabled smoke-test" name="Components/Button Disabled smoke-test" time="1.583">
+    </testcase>
+    <testcase classname="Components/Button Icon smoke-test" name="Components/Button Icon smoke-test" time="1.486">
     </testcase>
   </testsuite>
-  <testsuite name="Components/Table" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:15" time="16.788" tests="2">
-    <testcase classname="Components/Table Two Thousand Rows smoke-test" name="Components/Table Two Thousand Rows smoke-test" time="4.395">
+  <testsuite name="Review/RequirementsGrid" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:21" time="23.023" tests="3">
+    <testcase classname="Review/RequirementsGrid Comfortable smoke-test" name="Review/RequirementsGrid Comfortable smoke-test" time="5.919">
     </testcase>
-    <testcase classname="Components/Table Compact smoke-test" name="Components/Table Compact smoke-test" time="4.289">
+    <testcase classname="Review/RequirementsGrid Compact smoke-test" name="Review/RequirementsGrid Compact smoke-test" time="3.47">
     </testcase>
-  </testsuite>
-  <testsuite name="Components/Toast" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:23" time="9.525" tests="1">
-    <testcase classname="Components/Toast Default play-test" name="Components/Toast Default play-test" time="3.399">
+    <testcase classname="Review/RequirementsGrid Cell Editor play-test" name="Review/RequirementsGrid Cell Editor play-test" time="3.438">
     </testcase>
   </testsuite>
-  <testsuite name="Foundations/Tokens" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:23" time="10.012" tests="1">
-    <testcase classname="Foundations/Tokens Overview smoke-test" name="Foundations/Tokens Overview smoke-test" time="3.471">
+  <testsuite name="Components/DiffText" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:38" time="11.251" tests="2">
+    <testcase classname="Components/DiffText Verdict smoke-test" name="Components/DiffText Verdict smoke-test" time="2.32">
+    </testcase>
+    <testcase classname="Components/DiffText Sentence smoke-test" name="Components/DiffText Sentence smoke-test" time="1.805">
     </testcase>
   </testsuite>
-  <testsuite name="Components/Tabs" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:24" time="9.27" tests="1">
-    <testcase classname="Components/Tabs Default play-test" name="Components/Tabs Default play-test" time="2.676">
+  <testsuite name="Components/Tag" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:38" time="11.976" tests="2">
+    <testcase classname="Components/Tag Default smoke-test" name="Components/Tag Default smoke-test" time="2.712">
+    </testcase>
+    <testcase classname="Components/Tag Removable smoke-test" name="Components/Tag Removable smoke-test" time="2.598">
     </testcase>
   </testsuite>
-  <testsuite name="Components/Kbd" errors="0" failures="0" skipped="0" timestamp="2026-11-27T20:57:29" time="6.099" tests="1">
-    <testcase classname="Components/Kbd Default smoke-test" name="Components/Kbd Default smoke-test" time="1.362">
+  <testsuite name="Components/SplitPane" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:41" time="9.772" tests="1">
+    <testcase classname="Components/SplitPane Three Panes smoke-test" name="Components/SplitPane Three Panes smoke-test" time="3.035">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/Table" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:36" time="15.919" tests="2">
+    <testcase classname="Components/Table Two Thousand Rows smoke-test" name="Components/Table Two Thousand Rows smoke-test" time="4.444">
+    </testcase>
+    <testcase classname="Components/Table Compact smoke-test" name="Components/Table Compact smoke-test" time="3.754">
+    </testcase>
+  </testsuite>
+  <testsuite name="Foundations/Tokens" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:42" time="10.323" tests="1">
+    <testcase classname="Foundations/Tokens Overview smoke-test" name="Foundations/Tokens Overview smoke-test" time="4.059">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/Tabs" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:44" time="9.059" tests="1">
+    <testcase classname="Components/Tabs Default play-test" name="Components/Tabs Default play-test" time="2.47">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/Toast" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:43" time="9.454" tests="1">
+    <testcase classname="Components/Toast Default play-test" name="Components/Toast Default play-test" time="2.424">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/Kbd" errors="0" failures="0" skipped="0" timestamp="2026-11-27T21:41:49" time="5.825" tests="1">
+    <testcase classname="Components/Kbd Default smoke-test" name="Components/Kbd Default smoke-test" time="1.44">
     </testcase>
   </testsuite>
 </testsuites>

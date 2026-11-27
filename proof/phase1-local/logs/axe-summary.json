@@ -13,19 +13,7 @@
   "detail": {
     "stories": [
       {
-        "story": "components-emptystate--default",
-        "violations": 0,
-        "serious": 0,
-        "ids": []
-      },
-      {
         "story": "components-badge--ok",
-        "violations": 0,
-        "serious": 0,
-        "ids": []
-      },
-      {
-        "story": "components-button--primary",
         "violations": 0,
         "serious": 0,
         "ids": []
@@ -43,7 +31,7 @@
         "ids": []
       },
       {
-        "story": "review-requirementsgrid--comfortable",
+        "story": "components-button--primary",
         "violations": 0,
         "serious": 0,
         "ids": []
@@ -55,25 +43,7 @@
         "ids": []
       },
       {
-        "story": "components-emptystate--with-action",
-        "violations": 0,
-        "serious": 0,
-        "ids": []
-      },
-      {
         "story": "components-badge--warn",
-        "violations": 0,
-        "serious": 0,
-        "ids": []
-      },
-      {
-        "story": "components-button--secondary",
-        "violations": 0,
-        "serious": 0,
-        "ids": []
-      },
-      {
-        "story": "components-confidencemeter--medium",
         "violations": 0,
         "serious": 0,
         "ids": []
@@ -85,7 +55,19 @@
         "ids": []
       },
       {
-        "story": "review-findingcard--correction-editor",
+        "story": "components-confidencemeter--medium",
+        "violations": 0,
+        "serious": 0,
+        "ids": []
+      },
+      {
+        "story": "components-emptystate--default",
+        "violations": 0,
+        "serious": 0,
+        "ids": []
+      },
+      {
+        "story": "components-button--secondary",
         "violations": 0,
         "serious": 0,
         "ids": []
@@ -97,7 +79,19 @@
         "ids": []
       },
       {
-        "story": "review-requirementsgrid--compact",
+        "story": "review-requirementsgrid--comfortable",
+        "violations": 0,
+        "serious": 0,
+        "ids": []
+      },
+      {
+        "story": "review-findingcard--correction-editor",
+        "violations": 0,
+        "serious": 0,
+        "ids": []
+      },
+      {
+        "story": "components-confidencemeter--low",
         "violations": 0,
         "serious": 0,
         "ids": []
@@ -109,7 +103,7 @@
         "ids": []
       },
       {
-        "story": "components-confidencemeter--low",
+        "story": "components-emptystate--with-action",
         "violations": 0,
         "serious": 0,
         "ids": []
@@ -133,13 +127,7 @@
         "ids": []
       },
       {
-        "story": "components-button--disabled",
-        "violations": 0,
-        "serious": 0,
-        "ids": []
-      },
-      {
-        "story": "review-requirementsgrid--cell-editor",
+        "story": "review-requirementsgrid--compact",
         "violations": 0,
         "serious": 0,
         "ids": []
@@ -157,7 +145,19 @@
         "ids": []
       },
       {
+        "story": "components-button--disabled",
+        "violations": 0,
+        "serious": 0,
+        "ids": []
+      },
+      {
         "story": "components-button--icon",
+        "violations": 0,
+        "serious": 0,
+        "ids": []
+      },
+      {
+        "story": "review-requirementsgrid--cell-editor",
         "violations": 0,
         "serious": 0,
         "ids": []
@@ -169,13 +169,13 @@
         "ids": []
       },
       {
-        "story": "components-table--two-thousand-rows",
+        "story": "components-tag--default",
         "violations": 0,
         "serious": 0,
         "ids": []
       },
       {
-        "story": "components-tag--default",
+        "story": "components-table--two-thousand-rows",
         "violations": 0,
         "serious": 0,
         "ids": []
@@ -205,12 +205,6 @@
         "ids": []
       },
       {
-        "story": "components-toast--default",
-        "violations": 0,
-        "serious": 0,
-        "ids": []
-      },
-      {
         "story": "foundations-tokens--overview",
         "violations": 0,
         "serious": 0,
@@ -218,6 +212,12 @@
       },
       {
         "story": "components-tabs--default",
+        "violations": 0,
+        "serious": 0,
+        "ids": []
+      },
+      {
+        "story": "components-toast--default",
         "violations": 0,
         "serious": 0,
         "ids": []

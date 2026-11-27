@@ -1,0 +1,12 @@
+{
+    "Status": "Deployed",
+    "Domain": "d1yaik0npka2rt.cloudfront.net",
+    "PriceClass": "PriceClass_100",
+    "Origins": [
+        "poi2i5ssp4.execute-api.ap-southeast-2.amazonaws.com",
+        "conformityreviewstudio-webbucket12880f5b-dylkkjtp6rhj.s3.ap-southeast-2.amazonaws.com"
+    ],
+    "Behaviors": [
+        "/api/*"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "Runtime": "nodejs24.x",
+    "MemorySize": 1024,
+    "Timeout": 25,
+    "Handler": "index.handler",
+    "CodeSize": 1442264,
+    "LogGroup": "ConformityReviewStudio-ApiLogs3D05D88B-l1w790GR2eqm"
+}

@@ -1,0 +1,10 @@
+{
+    "Name": "ConformityReviewStudio-TableCD117FA1-1K4PYO3LTWRJ1",
+    "Status": "ACTIVE",
+    "Billing": "PAY_PER_REQUEST",
+    "Items": 0,
+    "Gsi": [
+        "GSI1"
+    ],
+    "DeletionProtection": false
+}

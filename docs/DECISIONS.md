@@ -10,3 +10,4 @@ One line each: date, decision, reason.
 - 2026-11-28 API Gateway HTTP API caps integrations at 30 s, so the cloud seed runs the analysis from this PC (same `analyseFile` code, real DynamoDB/S3/Bedrock) instead of through a Lambda request.
 - 2026-11-28 Hono routes live under `/api` so CloudFront can forward `/api/*` to API Gateway unchanged; `/healthz` is also served at the root.
 - 2026-11-28 Visual baselines have no platform suffix and use a small pixel-ratio tolerance, so Windows-made baselines remain usable on the Linux CI runner.
+- 2026-11-28 Bedrock model: `au.anthropic.claude-haiku-4-5-20251001-v1:0` (cross-region inference profile usable from ap-southeast-2; Haiku 5.5 and Sonnet 5.x are not enabled for this account, claude-3.x are end-of-life). Cheapest model that supports forced tool use.

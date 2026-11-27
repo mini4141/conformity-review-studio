@@ -2,8 +2,8 @@
   {
     "url": "http://localhost:4173/",
     "isRepresentativeRun": true,
-    "htmlPath": "C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\15-conformity-review-studio\\proof\\phase1-local\\tests\\lighthouse\\localhost--2026_11_27_20_59_25.report.html",
-    "jsonPath": "C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\15-conformity-review-studio\\proof\\phase1-local\\tests\\lighthouse\\localhost--2026_11_27_20_59_25.report.json",
+    "htmlPath": "C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\15-conformity-review-studio\\proof\\phase1-local\\tests\\lighthouse\\localhost--2026_11_27_21_43_48.report.html",
+    "jsonPath": "C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\15-conformity-review-studio\\proof\\phase1-local\\tests\\lighthouse\\localhost--2026_11_27_21_43_48.report.json",
     "summary": {
       "performance": 0.99,
       "accessibility": 1,
@@ -15,8 +15,8 @@
   {
     "url": "http://localhost:4173/files/f01/matrix",
     "isRepresentativeRun": true,
-    "htmlPath": "C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\15-conformity-review-studio\\proof\\phase1-local\\tests\\lighthouse\\localhost-files_f01_matrix-2026_11_27_20_59_46.report.html",
-    "jsonPath": "C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\15-conformity-review-studio\\proof\\phase1-local\\tests\\lighthouse\\localhost-files_f01_matrix-2026_11_27_20_59_46.report.json",
+    "htmlPath": "C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\15-conformity-review-studio\\proof\\phase1-local\\tests\\lighthouse\\localhost-files_f01_matrix-2026_11_27_21_44_09.report.html",
+    "jsonPath": "C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\15-conformity-review-studio\\proof\\phase1-local\\tests\\lighthouse\\localhost-files_f01_matrix-2026_11_27_21_44_09.report.json",
     "summary": {
       "performance": 1,
       "accessibility": 1,

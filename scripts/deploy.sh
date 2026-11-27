@@ -18,7 +18,7 @@ aws sts get-caller-identity --query Arn --output text | redact
 ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
 
 echo "== 1. bootstrap (qualifier crstudio) =="
-(cd infra && pnpm exec cdk bootstrap "aws://$ACCOUNT/$AWS_REGION" --qualifier crstudio --toolkit-stack-name "$TOOLKIT" \
+(cd infra && cdk bootstrap "aws://$ACCOUNT/$AWS_REGION" --qualifier crstudio --toolkit-stack-name "$TOOLKIT" \
   --tags Project=conformity-review-studio --tags Ephemeral=true --tags ManagedBy=cdk --tags Owner=alvieirvansyah) 2>&1 | redact | tee "$P/logs/cdk-bootstrap.log"
 
 echo "== 2. build web app + Storybook =="
@@ -26,7 +26,7 @@ pnpm --filter @crs/web build
 pnpm build-storybook > "$P/logs/storybook-build.log" 2>&1
 
 echo "== 3. cdk deploy =="
-(cd infra && pnpm exec cdk deploy --require-approval never --outputs-file ../.local/cdk-outputs.json) 2>&1 | redact | tee "$P/logs/cdk-deploy.log"
+(cd infra && cdk deploy --require-approval never --outputs-file ../.local/cdk-outputs.json) 2>&1 | redact | tee "$P/logs/cdk-deploy.log"
 out() { node -e "console.log(require('./.local/cdk-outputs.json').$STACK['$1'])"; }
 CF=$(out CloudFrontUrl); DIST=$(out DistributionId); TABLE=$(out TableName); DOCS=$(out DocsBucketName); WEB=$(out WebBucketName)
 
@@ -35,22 +35,16 @@ aws s3 sync apps/web/dist "s3://$WEB/" --delete --exclude 'storybook/*' --only-s
 aws s3 sync storybook-static "s3://$WEB/storybook/" --delete --only-show-errors
 aws cloudfront create-invalidation --distribution-id "$DIST" --paths '/*' --query Invalidation.Status --output text
 
-echo "== 5. seed: upload sample PDF, analyse (Bedrock if enabled, else rules) =="
-PROVIDER=rules
-MODEL=${BEDROCK_MODEL_ID:-$(grep -E '^BEDROCK_MODEL_ID=' .env.example | cut -d= -f2 | cut -d' ' -f1)}
-if aws bedrock-runtime converse --model-id "$MODEL" --messages '[{"role":"user","content":[{"text":"ping"}]}]' --inference-config '{"maxTokens":5}' >/dev/null 2>"$P/logs/bedrock-probe.err"; then
-  PROVIDER=bedrock
-else
-  echo "Bedrock model access not available for $MODEL: falling back to the rules provider (see bedrock-probe.log)" | tee "$P/logs/bedrock-fallback.log"
-  redact < "$P/logs/bedrock-probe.err" > "$P/logs/bedrock-probe.log"
-fi
-rm -f "$P/logs/bedrock-probe.err"
-TABLE_NAME=$TABLE DOCS_BUCKET=$DOCS LLM_PROVIDER=$PROVIDER BEDROCK_MODEL_ID=$MODEL SEED_SAMPLE_OUT="$P/logs/bedrock-findings-sample.json" pnpm --filter @crs/api seed 2>&1 | redact | tee "$P/logs/cloud-seed.log"
+echo "== 5. seed: upload sample PDF, analyse with Bedrock (falls back, logged) =="
+bash scripts/cloud-seed.sh
 
 echo "== 6. smoke + e2e against CloudFront =="
-for i in $(seq 1 30); do curl -sf "$CF/api/healthz" >/dev/null && break; sleep 3; done
+for i in $(seq 1 60); do curl -sf "$CF/api/healthz" >/dev/null && break; sleep 5; done
+set +e # a failing cloud test must not stop the resource list, screenshots and (later) the mandatory destroy
 (cd e2e && BASE_URL="$CF" PROOF_TESTS_DIR="../$P/tests/playwright-cloud" PROOF_LOGS_DIR="../$P/logs" pnpm exec playwright test 00-smoke 02-flow 03-perf) 2>&1 | redact | tee "$P/logs/playwright-cloud.log"
-bash scripts/capture-proof.sh phase2 2>&1 | redact | tee -a "$P/logs/playwright-cloud.log"
+TEST_RC=${PIPESTATUS[0]}
+BASE_URL="$CF" bash scripts/capture-proof.sh phase2 2>&1 | redact | tee -a "$P/logs/playwright-cloud.log"
+set -e
 
 echo "== 7. resources =="
 {
@@ -62,4 +56,4 @@ echo "== 7. resources =="
   aws resourcegroupstaggingapi get-resources --tag-filters Key=Project,Values=conformity-review-studio --query 'ResourceTagMappingList[].ResourceARN' --output text | tr '\t' '\n'
 } 2>&1 | redact > "$P/resources.txt"
 echo "$CF" > .local/cloudfront-url.txt
-echo "DEPLOYED: $CF"
+echo "DEPLOYED: $CF (cloud tests exit code: ${TEST_RC:-0})"
