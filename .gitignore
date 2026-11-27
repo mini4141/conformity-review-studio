@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+storybook-static/
+cdk.out/
+.local/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+playwright-report/
+test-results/
+.lighthouseci/
+*.tsbuildinfo
+.vite/

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="6" failures="0" errors="0" time="2.4667185">
+    <testsuite name="src/features/matrix/RequirementsGrid.test.tsx" timestamp="2026-11-27T20:56:15.758Z" hostname="DESKTOP-LSTSC86" tests="1" failures="0" errors="0" skipped="0" time="1.0646858">
+        <testcase classname="src/features/matrix/RequirementsGrid.test.tsx" name="RequirementsGrid &gt; edits a comment inline with the keyboard and reports the patch" time="1.0584972">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/workspace/ClauseList.test.tsx" timestamp="2026-11-27T20:56:15.760Z" hostname="DESKTOP-LSTSC86" tests="2" failures="0" errors="0" skipped="0" time="0.5659026">
+        <testcase classname="src/features/workspace/ClauseList.test.tsx" name="ClauseList &gt; filters clauses by text and selects one" time="0.4778243">
+        </testcase>
+        <testcase classname="src/features/workspace/ClauseList.test.tsx" name="ClauseList &gt; narrows to clauses without a finding" time="0.0799121">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/workspace/FindingCard.test.tsx" timestamp="2026-11-27T20:56:15.762Z" hostname="DESKTOP-LSTSC86" tests="3" failures="0" errors="0" skipped="0" time="0.8361301">
+        <testcase classname="src/features/workspace/FindingCard.test.tsx" name="FindingCard &gt; accepts a finding and jumps to its evidence page" time="0.3134919">
+        </testcase>
+        <testcase classname="src/features/workspace/FindingCard.test.tsx" name="FindingCard &gt; corrects a finding with a reason and the corrected verdict" time="0.4948009">
+        </testcase>
+        <testcase classname="src/features/workspace/FindingCard.test.tsx" name="FindingCard &gt; shows the diff and history of a corrected finding" time="0.0203513">
+        </testcase>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,74 @@
+<testsuites id="" name="" tests="22" failures="0" skipped="2" errors="0" time="82.793">
+<testsuite name="00-smoke.spec.ts" timestamp="2026-11-27T20:57:49.755Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.502" errors="0">
+<testcase name="api smoke: health, queue, clauses, findings coverage and the PDF" classname="00-smoke.spec.ts" time="0.502">
+</testcase>
+</testsuite>
+<testsuite name="01-visual.spec.ts" timestamp="2026-11-27T20:57:49.755Z" hostname="chromium" tests="8" failures="0" skipped="0" time="13.282" errors="0">
+<testcase name="visual: queue (light)" classname="01-visual.spec.ts" time="1.983">
+</testcase>
+<testcase name="visual: workspace (light)" classname="01-visual.spec.ts" time="2.071">
+</testcase>
+<testcase name="visual: matrix (light)" classname="01-visual.spec.ts" time="1.399">
+</testcase>
+<testcase name="visual: decision (light)" classname="01-visual.spec.ts" time="1.424">
+</testcase>
+<testcase name="visual: queue (dark)" classname="01-visual.spec.ts" time="1.507">
+</testcase>
+<testcase name="visual: workspace (dark)" classname="01-visual.spec.ts" time="1.949">
+</testcase>
+<testcase name="visual: matrix (dark)" classname="01-visual.spec.ts" time="1.613">
+</testcase>
+<testcase name="visual: decision (dark)" classname="01-visual.spec.ts" time="1.336">
+</testcase>
+</testsuite>
+<testsuite name="02-flow.spec.ts" timestamp="2026-11-27T20:57:49.755Z" hostname="chromium" tests="2" failures="0" skipped="0" time="6.502" errors="0">
+<testcase name="review journey: queue, evidence jump, correction that persists, matrix edit, decision and export" classname="02-flow.spec.ts" time="5.143">
+</testcase>
+<testcase name="keyboard affordances: command palette and shortcut sheet" classname="02-flow.spec.ts" time="1.359">
+</testcase>
+</testsuite>
+<testsuite name="03-perf.spec.ts" timestamp="2026-11-27T20:57:49.755Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.227" errors="0">
+<testcase name="matrix scroll stays at &gt;= 55 fps on average" classname="03-perf.spec.ts" time="11.227">
+</testcase>
+</testsuite>
+<testsuite name="04-a11y.spec.ts" timestamp="2026-11-27T20:57:49.755Z" hostname="chromium" tests="8" failures="0" skipped="0" time="35.972" errors="0">
+<testcase name="axe: queue (light) has no serious or critical violations" classname="04-a11y.spec.ts" time="4.716">
+</testcase>
+<testcase name="axe: workspace (light) has no serious or critical violations" classname="04-a11y.spec.ts" time="5.759">
+</testcase>
+<testcase name="axe: matrix (light) has no serious or critical violations" classname="04-a11y.spec.ts" time="5.06">
+</testcase>
+<testcase name="axe: decision (light) has no serious or critical violations" classname="04-a11y.spec.ts" time="2.223">
+</testcase>
+<testcase name="axe: queue (dark) has no serious or critical violations" classname="04-a11y.spec.ts" time="4.321">
+</testcase>
+<testcase name="axe: workspace (dark) has no serious or critical violations" classname="04-a11y.spec.ts" time="5.33">
+</testcase>
+<testcase name="axe: matrix (dark) has no serious or critical violations" classname="04-a11y.spec.ts" time="6.071">
+</testcase>
+<testcase name="axe: decision (dark) has no serious or critical violations" classname="04-a11y.spec.ts" time="2.492">
+</testcase>
+</testsuite>
+<testsuite name="capture.spec.ts" timestamp="2026-11-27T20:57:49.755Z" hostname="chromium" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="phase1 local › captures the eleven required screens" classname="capture.spec.ts">
+<properties>
+<property name="skip" value="set CAPTURE=phase1|phase2 (use scripts/capture-proof.sh)">
+</property>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="phase2 cloud › captures the cloud screens" classname="capture.spec.ts">
+<properties>
+<property name="skip" value="set CAPTURE=phase1|phase2 (use scripts/capture-proof.sh)">
+</property>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

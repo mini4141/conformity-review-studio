@@ -1,0 +1,12 @@
+packages:
+  - apps/*
+  - packages/*
+  - tools/*
+  - infra
+  - e2e
+allowBuilds:
+  esbuild: true
+  '@swc/core': true
+  '@parcel/watcher': true
+overrides:
+  typescript: ~5.9.3

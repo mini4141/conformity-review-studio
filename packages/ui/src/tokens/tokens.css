@@ -1,0 +1,144 @@
+/* Design tokens: colour, type, spacing, density, motion. Light is the default; dark and compact are attribute switches. */
+:root {
+  --font-sans: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+
+  /* type scale tuned for density: 11 / 12 / 13 / 15 / 18 / 22 */
+  --fs-2xs: 10.5px;
+  --fs-xs: 11px;
+  --fs-sm: 12px;
+  --fs-md: 13px;
+  --fs-lg: 15px;
+  --fs-xl: 18px;
+  --fs-2xl: 22px;
+  --lh-tight: 1.25;
+  --lh-body: 1.45;
+  --fw-regular: 450;
+  --fw-medium: 550;
+  --fw-bold: 650;
+
+  /* spacing scale (4px base, with 2px for hairline gaps) */
+  --sp-1: 2px;
+  --sp-2: 4px;
+  --sp-3: 6px;
+  --sp-4: 8px;
+  --sp-5: 12px;
+  --sp-6: 16px;
+  --sp-7: 24px;
+  --sp-8: 32px;
+  --radius-1: 3px;
+  --radius-2: 5px;
+  --radius-3: 8px;
+
+  /* motion */
+  --dur-fast: 90ms;
+  --dur-med: 160ms;
+  --dur-slow: 260ms;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* density: comfortable (default) */
+  --row-h: 32px;
+  --ctl-h: 30px;
+  --pad-x: 12px;
+  --fs-body: var(--fs-md);
+
+  /* colour: light */
+  --bg: #f4f5f8;
+  --surface: #ffffff;
+  --surface-2: #eef0f4;
+  --surface-hover: #e8ebf1;
+  --border: #dde0e8;
+  --border-strong: #b9bfcc;
+  --text: #14171f;
+  --text-muted: #566070;
+  --accent: #2f45c0;
+  --accent-text: #ffffff;
+  --accent-soft: #e4e9fb;
+  --focus: #2f45c0;
+  --highlight: rgb(47 69 192 / 0.2);
+  --highlight-border: #2f45c0;
+  --search-hit: rgb(214 154 0 / 0.35);
+  --ok: #1a6b3a;
+  --ok-soft: #e2f3e8;
+  --warn: #85500a;
+  --warn-soft: #fcefd2;
+  --bad: #a3262a;
+  --bad-soft: #fbe4e4;
+  --info: #1f4f9e;
+  --info-soft: #e2ecfa;
+  --shadow: 0 6px 24px rgb(20 23 31 / 0.14), 0 1px 3px rgb(20 23 31 / 0.1);
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg: #0e1116;
+  --surface: #151a22;
+  --surface-2: #1c222c;
+  --surface-hover: #242b37;
+  --border: #29303d;
+  --border-strong: #3d4657;
+  --text: #e7eaf0;
+  --text-muted: #9aa4b4;
+  --accent: #8fa3ff;
+  --accent-text: #0e1116;
+  --accent-soft: #232b4d;
+  --focus: #8fa3ff;
+  --highlight: rgb(143 163 255 / 0.28);
+  --highlight-border: #8fa3ff;
+  --search-hit: rgb(240 194 107 / 0.35);
+  --ok: #7fd7a0;
+  --ok-soft: #12301f;
+  --warn: #f0c26b;
+  --warn-soft: #3a2a0a;
+  --bad: #ff9c9c;
+  --bad-soft: #3d1717;
+  --info: #9cc2ff;
+  --info-soft: #14284a;
+  --shadow: 0 6px 24px rgb(0 0 0 / 0.5), 0 1px 3px rgb(0 0 0 / 0.4);
+  color-scheme: dark;
+}
+
+/* density: compact tightens rows, padding and body size together */
+[data-density='compact'] {
+  --row-h: 24px;
+  --ctl-h: 24px;
+  --pad-x: 8px;
+  --fs-body: var(--fs-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-med: 0ms;
+    --dur-slow: 0ms;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: var(--fw-regular) var(--fs-body) / var(--lh-body) var(--font-sans);
+  font-feature-settings: 'cv11', 'ss03';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* numbers align in columns everywhere */
+.tnum,
+td,
+th,
+[role='gridcell'],
+kbd {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}

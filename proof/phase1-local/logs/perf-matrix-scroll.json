@@ -1,0 +1,27 @@
+{
+  "test": "matrix-scroll",
+  "viewport": "1440x900",
+  "build": "production (vite preview)",
+  "rows": "181",
+  "runs": [
+    {
+      "frames": 149,
+      "seconds": 2.53,
+      "avgFps": 58.8,
+      "worstFrameMs": 33.4
+    },
+    {
+      "frames": 144,
+      "seconds": 2.52,
+      "avgFps": 57.2,
+      "worstFrameMs": 50
+    },
+    {
+      "frames": 142,
+      "seconds": 2.52,
+      "avgFps": 56.4,
+      "worstFrameMs": 33.4
+    }
+  ],
+  "medianAvgFps": 57.2
+}

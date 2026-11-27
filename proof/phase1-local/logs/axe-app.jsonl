@@ -1,0 +1,8 @@
+{"screen":"queue","theme":"light","violations":0,"serious":0,"ids":[]}
+{"screen":"workspace","theme":"light","violations":1,"serious":0,"ids":["heading-order:moderate"]}
+{"screen":"matrix","theme":"light","violations":0,"serious":0,"ids":[]}
+{"screen":"decision","theme":"light","violations":0,"serious":0,"ids":[]}
+{"screen":"queue","theme":"dark","violations":0,"serious":0,"ids":[]}
+{"screen":"workspace","theme":"dark","violations":1,"serious":0,"ids":["heading-order:moderate"]}
+{"screen":"matrix","theme":"dark","violations":0,"serious":0,"ids":[]}
+{"screen":"decision","theme":"dark","violations":0,"serious":0,"ids":[]}

@@ -1,0 +1,40 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      dynamodb:
+        image: amazon/dynamodb-local:2.6.1
+        ports: ["8000:8000"]
+    env:
+      DDB_ENDPOINT: http://localhost:8000
+      AWS_ACCESS_KEY_ID: local
+      AWS_SECRET_ACCESS_KEY: local
+      AWS_REGION: ap-southeast-2
+      TABLE_NAME: crs-table
+      DOCS_DIR: .local/docs
+      LLM_PROVIDER: rules
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+      - run: bash scripts/test-all.sh --ci
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reports
+          path: |
+            proof/phase1-local/tests
+            proof/phase1-local/logs
+            e2e/test-results

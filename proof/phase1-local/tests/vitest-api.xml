@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="1" failures="0" errors="0" time="1.6927873">
+    <testsuite name="src/pipeline.test.ts" timestamp="2026-11-27T20:56:01.582Z" hostname="DESKTOP-LSTSC86" tests="1" failures="0" errors="0" skipped="0" time="1.6927873">
+        <testcase classname="src/pipeline.test.ts" name="document intelligence (rules provider) &gt; yields findings for at least 80% of clauses and finds 8.4.2 on page 233" time="1.6902533">
+        </testcase>
+    </testsuite>
+</testsuites>
